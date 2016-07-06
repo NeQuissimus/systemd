@@ -314,9 +314,7 @@ static int trie_search_f(sd_hwdb *hwdb, const char *search) {
 }
 
 static const char hwdb_bin_paths[] =
-        "/etc/systemd/hwdb/hwdb.bin\0"
         "/etc/udev/hwdb.bin\0"
-        "/usr/lib/systemd/hwdb/hwdb.bin\0"
 #if HAVE_SPLIT_USR
         "/lib/systemd/hwdb/hwdb.bin\0"
 #endif
